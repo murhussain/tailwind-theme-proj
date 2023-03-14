@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Set up styles for the light mode */
+.bg-light {
+  background-color: #FFFFFF;
+}
+
+.text-light {
+  color: #3F8FAC;
+}
+
+/* Set up styles for the dark mode */
+.bg-dark {
+  background-color: #2C3E50;
+}
+
+.text-dark {
+  color: #FFFFFF;
+}

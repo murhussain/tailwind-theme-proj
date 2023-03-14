@@ -1,0 +1,27 @@
+{
+  "name": "tailwind-theme-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murhussain/tailwind-theme-proj.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murhussain/tailwind-theme-proj/issues"
+  },
+  "homepage": "https://github.com/murhussain/tailwind-theme-proj#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
