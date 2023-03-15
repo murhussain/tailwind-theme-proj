@@ -19,7 +19,8 @@
   "homepage": "https://github.com/murhussain/tailwind-theme-proj#readme",
   "dependencies": {
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21"
+    "postcss": "^8.4.21",
+    "tailwind-theme-switcher": "^1.0.2"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.7"
