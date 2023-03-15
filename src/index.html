@@ -8,17 +8,42 @@
   </head>
   <body>
     <body>
-      <section class="bg-white dark:bg-black">
+      <section class="bg-white dark:bg-[#260f09]">
         <h1 class="text-red-400 dark:text-green-200">Hello, world!</h1>
 
         <div class="h-64 w-80 p-10 bg-gray-600 dark:bg-green-400"><p>hello there</p></div>
       </section>
   
-      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+      <button onclick="toggleDarkMode()" class="flex items-center rounded-full p-2 bg-gray-300 dark:bg-gray-700">
+        <span class="text-yellow-500 dark:text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42"></path>
+          </svg>
+        </span>
+        <span class="text-gray-800 dark:text-white ml-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22A10 10 0 1 0 2 12a10 10 0 0 0 10 10zM12 6v12"></path>
+          </svg>
+        </span>
+      </button>
   
+      <script src="https://kit.fontawesome.com/fcbe6f63ef.js" crossorigin="anonymous"></script>
       <script>
         function toggleDarkMode() {
-          document.documentElement.classList.toggle('dark');
+          const htmlElement = document.documentElement;
+          const isDark = htmlElement.classList.contains('dark');
+          const sunIcon = document.querySelector('.fa-sun');
+          const moonIcon = document.querySelector('.fa-moon');
+
+          if (isDark) {
+            htmlElement.classList.remove('dark');
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+          } else {
+            htmlElement.classList.add('dark');
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+          }
         }
       </script>
     </body>
