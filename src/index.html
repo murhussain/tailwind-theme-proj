@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>My Website</title>
+  </head>
+  <body>
+    <body>
+      <section class="bg-white dark:bg-black">
+        <h1 class="text-red-400 dark:text-green-200">Hello, world!</h1>
+
+        <div class="h-64 w-80 p-10 bg-gray-600 dark:bg-green-400"><p>hello there</p></div>
+      </section>
+  
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  
+      <script>
+        function toggleDarkMode() {
+          document.documentElement.classList.toggle('dark');
+        }
+      </script>
+    </body>
+  </body>
+</html>
